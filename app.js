@@ -1,4 +1,4 @@
-// Player score storage test
+// Player score storage
 const p1 = {
     score: 0,
     button: document.querySelector('#p1Button'),
@@ -15,6 +15,7 @@ const winningScoreSelect = document.querySelector('#playto');
 let winningScore = 21;
 let isGameOver = false;
 
+// Updates score if button was hit and disables buttons if a player won
 function updateScores(player, opponent) {
     if (!isGameOver) {
         player.score += 1;
@@ -45,6 +46,7 @@ winningScoreSelect.addEventListener('change', function () {
 
 resetButton.addEventListener('click', reset)
 
+// Reset the score of the game
 function reset() {
     isGameOver = false;
     for (let p of [p1, p2]) {
