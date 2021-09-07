@@ -1,4 +1,4 @@
-// Player score storage
+// Player score storage test
 const p1 = {
     score: 0,
     button: document.querySelector('#p1Button'),
